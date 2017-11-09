@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net471</TargetFrameworks>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>APIDemo.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>@codexguy</Authors>
+    <Company>CodeX Enterprises LLC</Company>
+    <Description>This project demonstrates key functionality available in the xSrkape.APIWrapper.InProc package. Examples cover http and local file processing.</Description>
+    <Copyright>Copyright (c) 2017</Copyright>
+    <PackageReleaseNotes />
+    <PackageTags>data parsing tabular relational unstructured excel google docs spreadsheet scraping json html dropbox xml csv shaping tables</PackageTags>
+    <PackageIconUrl>http://www.xskrape.com/images/XS96.png</PackageIconUrl>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+    <PackageLicenseUrl>https://github.com/codexguy/xSkrape.APIWrapper.REST/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xSkrape.APIWrapper.Base" Version="1.0.1" />
+    <PackageReference Include="xSkrape.APIWrapper.InProc" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>
