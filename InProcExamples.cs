@@ -328,7 +328,7 @@ namespace APIWrapperDemo
         {
             try
             {
-                // Example - Extract data from an Excel spreadsheet on a unc share; spreadsheet example can be found here: **
+                // Example - Extract data from an Excel spreadsheet on a unc share
                 var r = await xSkrapeInProc.GetDataTable(CLIENT_KEY, @"file:\\myserver01\datashare\spendanal.xlsx", "columnname=Month && mergecolumndown=2 && removerowswithblank=Month");
 
                 Console.WriteLine($"Success: {r.success}");

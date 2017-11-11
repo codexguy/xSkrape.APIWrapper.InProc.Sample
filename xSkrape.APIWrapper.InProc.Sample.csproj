@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>net471</TargetFrameworks>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>APIDemo.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>@codexguy</Authors>
     <Company>CodeX Enterprises LLC</Company>
-    <Description>This project demonstrates key functionality available in the xSrkape.APIWrapper.InProc package. Examples cover http and local file processing.</Description>
+    <Description>xSkrape provides parsing / tabular detection for structured, semi and non-structured data sources with minimal coding. Interact with HTML, JSON, XML, CSV, Excel, DropBox, Google Docs and other sources using simple directives. This package contains a .cs file with example usage of the InProc version.</Description>
     <Copyright>Copyright (c) 2017</Copyright>
     <PackageReleaseNotes />
     <PackageTags>data parsing tabular relational unstructured excel google docs spreadsheet scraping json html dropbox xml csv shaping tables</PackageTags>
@@ -15,9 +15,16 @@
     <ApplicationIcon />
     <OutputType>Exe</OutputType>
     <StartupObject />
-    <PackageLicenseUrl>https://github.com/codexguy/xSkrape.APIWrapper.REST/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/codexguy/xSkrape.APIWrapper.InProc.Sample/blob/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.5</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="dist\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <None Remove="dist\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="xSkrape.APIWrapper.Base" Version="1.0.1" />

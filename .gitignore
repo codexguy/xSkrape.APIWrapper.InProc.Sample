@@ -3,3 +3,6 @@
 ################################################################################
 
 /bin/Debug
+/obj
+/dist
+/.vs/xSkrape.APIWrapper.InProc.Sample/v15
